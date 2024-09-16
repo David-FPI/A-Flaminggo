@@ -1,13 +1,19 @@
 import streamlit as st
 
-st.image("https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6")
 # Title of the app
 st.title("🎈 A-Flamingo Club")
 
-# Custom CSS to make the image circular and align the image and description side by side
+# Custom CSS to set background image
 st.markdown(
     """
     <style>
+    body {
+        background-image: url('https://wallpaperaccess.com/full/2048221.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+    }
     .container {
         display: flex;
         align-items: center;
@@ -17,6 +23,7 @@ st.markdown(
         width: 150px;
         height: 150px;
         margin-right: 20px;
+        border: 2px solid white;
     }
     .description {
         font-size: 20px;

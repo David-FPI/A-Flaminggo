@@ -1,5 +1,20 @@
 import streamlit as st
 
+
+# ... (Giữ nguyên phần code tùy chỉnh giao diện của bạn)
+
+# Tạo sidebar và cho phép người dùng chọn chủ đề
+selected_topic = st.sidebar.selectbox("Chọn chủ đề", ["Giới thiệu", "Hoạt động", "Thành viên"])
+
+# Định nghĩa nội dung các chủ đề
+topics = {
+    "Giới thiệu": "Đây là phần giới thiệu về câu lạc bộ A-Flamingo.",
+    "Hoạt động": "Ở đây chúng ta sẽ liệt kê các hoạt động của câu lạc bộ.",
+    "Thành viên": "Danh sách các thành viên trong câu lạc bộ."
+}
+
+# Hiển thị nội dung
+st.write(topics[selected_topic])
 # Ẩn main menu và footer của Streamlit
 hide_st_style = """
     <style>

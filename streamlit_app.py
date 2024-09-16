@@ -4,7 +4,7 @@ import streamlit as st
 # ... (Giữ nguyên phần code tùy chỉnh giao diện của bạn)
 
 # Tạo sidebar và cho phép người dùng chọn chủ đề
-selected_topic = st.sidebar.selectbox("Chọn chủ đề", ["Giới thiệu", "Quá trình phát triển", "Cập nhận tin tức mới"])
+selected_topic = st.sidebar.selectbox("Chọn chủ đề", ["Giới thiệu", "Quá trình phát triển", "Cập nhật tin tức mới"])
 
 # Định nghĩa nội dung các chủ đề
 topics = {

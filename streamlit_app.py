@@ -1,6 +1,6 @@
 import streamlit as st
 
-# Hình ảnh đầu tiên
+# Hình ảnh đầu tiên (giữ nguyên nhưng không có margin)
 st.image("https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6")
 
 # Custom CSS to set the galaxy-themed background
@@ -21,6 +21,12 @@ st.markdown(
         background-color: rgba(0, 0, 0, 0.6); /* Transparent dark overlay for content visibility */
         padding: 20px;
         border-radius: 15px;
+    }
+
+    /* Remove any margin or padding between images */
+    img {
+        margin: 0;
+        padding: 0;
     }
 
     /* Make the text stand out with a shadow effect */

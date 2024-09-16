@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Title of the app
-st.title("🎈 A-Flamingo Club")
+st.title(" A-Flamingo Club")
 
 # Custom CSS to set the galaxy background with pink highlights
 st.markdown(

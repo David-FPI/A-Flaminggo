@@ -1,1 +1,6 @@
 streamlit
+Pillow
+altair
+pydeck
+pandas
+numpy

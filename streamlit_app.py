@@ -154,7 +154,7 @@ st.markdown(
                     Câu lạc bộ âm nhạc A-Flamingo là nơi hội tụ của những tâm hồn yêu thích âm nhạc tại Trường Cao đẳng Anh Quốc BTEC FPT Hồ Chí Minh. Chúng tôi tự hào là một cộng đồng năng động và sáng tạo, nơi các thành viên có cơ hội thể hiện niềm đam mê âm nhạc của mình thông qua các buổi biểu diễn, workshop và các hoạt động giao lưu âm nhạc. A-Flamingo không chỉ
                     là nơi luyện tập kỹ năng âm nhạc mà còn là môi trường lý tưởng để các bạn trẻ phát triển khả năng làm việc nhóm, sáng tạo và kết nối với những người có cùng sở thích. Hãy gia nhập chúng tôi để cùng nhau tạo nên những bản nhạc tuyệt vời và những kỷ niệm đáng nhớ.
                 </div>
-                            <div class="slogan">
+                <br>            <div class="slogan">
                 <i> A-Flamingo _ Kết nối đam mê _Tỏa sáng âm nhạc <i>
             </div>
             </div>

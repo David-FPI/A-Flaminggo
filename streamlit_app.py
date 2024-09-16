@@ -1,103 +1,117 @@
 import streamlit as st
 
-# Hình ảnh đầu tiên (giữ nguyên nhưng không có margin)
-st.image("https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6")
+# Ẩn main menu và footer của Streamlit
+hide_st_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# Custom CSS to set the galaxy-themed background and full-width layout
+# Custom CSS để thiết lập giao diện full màn hình
 st.markdown(
     """
     <style>
-    /* Reset Streamlit's default padding */
-    .stApp {
+    /* Reset toàn bộ margin và padding */
+    * {
+        margin: 0;
         padding: 0;
+        box-sizing: border-box;
     }
     
-    /* Apply the galaxy image as the background to the whole body */
-    body {
+    /* Thiết lập body và .stApp để full màn hình */
+    body, .stApp {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    /* Ẩn thanh cuộn */
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* Thiết lập background */
+    .stApp {
         background-image: url('https://img.freepik.com/premium-photo/pastel-clouds-background-pastel-cloud-background-dreamy-clouds-background-pastel-sky-background-ai-generative_703884-13035.jpg');
         background-size: cover;
         background-position: center;
-        background-attachment: fixed;
-        color: white;
-        margin: 0;
-        padding: 0;
+        display: flex;
+        flex-direction: column;
     }
     
-    /* Ensure that all Streamlit content has proper visibility with some transparency */
-    .stApp > header {
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    
-    .stApp > div:has(section) {
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 20px;
-    }
-    
-    /* Remove any margin or padding between images */
-    img {
-        margin: 0;
-        padding: 0;
+    /* Styling cho container chính */
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
         width: 100%;
-        height: auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.6);
     }
     
-    /* Make the text stand out with a shadow effect */
-    h1 {
-        color: #ff69b4; /* Bright pink to match galaxy theme */
-        text-shadow: 2px 2px 4px #000000;
+    /* Styling cho hình ảnh */
+    .full-width-image {
+        width: 100%;
+        max-height: 50vh;
+        object-fit: cover;
     }
     
-    /* Style for the container holding image and description */
-    .container {
+    /* Styling cho container chứa icon và mô tả */
+    .icon-container {
         display: flex;
         align-items: center;
-        margin: 0;
-        padding: 20px;
-        background-color: rgba(255, 255, 255, 0.1);
-        border-radius: 0;
+        width: 100%;
+        padding: 20px 0;
     }
     
     /* Circular image styling */
     .icon {
-        border-radius: 50%;
         width: 150px;
         height: 150px;
+        border-radius: 50%;
         margin-right: 20px;
         border: 3px solid white;
     }
     
-    /* Styling the text next to the image */
+    /* Styling cho phần mô tả */
     .description {
-        font-size: 22px;
+        color: white;
+        font-size: 24px;
         font-weight: bold;
     }
     
-    /* Full-width for all elements */
-    .stApp > div:has(section) > div {
-        width: 100%;
-        max-width: none;
-        padding: 0;
+    /* Styling cho link */
+    .link-text {
+        color: #ff69b4;
+        font-size: 18px;
+        margin-top: 20px;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Display the image and description in a container
+# HTML structure cho layout full màn hình
 st.markdown(
     """
-    <div class="container">
-        <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/447678075_767488495531324_3390405170555493979_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xuaEcEZMd6sQ7kNvgHLiqBW&_nc_ht=scontent.fsgn5-8.fna&_nc_gid=AWVa4ylzPoVZW2g61tLsXxo&oh=00_AYCzt7Ed6xiewhnBUFT4nEFDwYj9gjdXoQBX_fyHNLYGEw&oe=66EDA697" class="icon">
-        <div class="description">
-            <strong>California Housing Data</strong><br>
-            Explore the housing data in California with visualizations and insights!
+    <div class="main-container">
+        <img src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6" class="full-width-image">
+        <div class="icon-container">
+            <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/447678075_767488495531324_3390405170555493979_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xuaEcEZMd6sQ7kNvgHLiqBW&_nc_ht=scontent.fsgn5-8.fna&_nc_gid=AWVa4ylzPoVZW2g61tLsXxo&oh=00_AYCzt7Ed6xiewhnBUFT4nEFDwYj9gjdXoQBX_fyHNLYGEw&oe=66EDA697" class="icon">
+            <div class="description">
+                <strong>California Housing Data</strong><br>
+                Explore the housing data in California with visualizations and insights!
+            </div>
+        </div>
+        <div class="link-text">
+            Let's start building! For help and inspiration, head over to <a href="https://docs.streamlit.io/" target="_blank">docs.streamlit.io</a>.
         </div>
     </div>
     """,
     unsafe_allow_html=True
-)
-
-# Call to action link
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )

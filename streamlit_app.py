@@ -122,10 +122,15 @@ st.markdown(
     }
 
 .slogan {
-    font-size: 18px;
-    color: #fff; /* Màu trắng */
-    text-align: center; /* Căn giữa */
-    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
 }
     
     </style>

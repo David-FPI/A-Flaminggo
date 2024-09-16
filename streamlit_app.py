@@ -3,37 +3,43 @@ import streamlit as st
 # Title of the app
 st.title("🎈 A-Flamingo Club")
 
-# Custom CSS to set background image
+# Custom CSS to set the galaxy background with pink highlights
 st.markdown(
     """
     <style>
+    /* Set the background image to a galaxy with pink tones */
     body {
-        background-image: url('https://wallpaperaccess.com/full/2048221.jpg');
+        background-image: url('https://images.unsplash.com/photo-1568223288053-3cf3f6e915f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         color: white;
     }
+    /* Add custom styling to the content box */
     .container {
         display: flex;
         align-items: center;
+        margin-top: 50px;
     }
+    /* Make the image circular and add a white border */
     .icon {
         border-radius: 50%;
         width: 150px;
         height: 150px;
         margin-right: 20px;
-        border: 2px solid white;
+        border: 3px solid white;
     }
+    /* Set text font and size for the description */
     .description {
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: bold;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Display image and description using HTML for layout
+# Display the image and description in a container
 st.markdown(
     """
     <div class="container">

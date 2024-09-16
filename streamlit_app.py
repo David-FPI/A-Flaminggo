@@ -155,7 +155,7 @@ st.markdown(
                     là nơi luyện tập kỹ năng âm nhạc mà còn là môi trường lý tưởng để các bạn trẻ phát triển khả năng làm việc nhóm, sáng tạo và kết nối với những người có cùng sở thích. Hãy gia nhập chúng tôi để cùng nhau tạo nên những bản nhạc tuyệt vời và những kỷ niệm đáng nhớ.
                 </div>
                             <div class="slogan">
-                *A-Flamingo _ Kết nối đam mê _Tỏa sáng âm nhạc*
+                <i> A-Flamingo _ Kết nối đam mê _Tỏa sáng âm nhạc <i>
             </div>
             </div>
         </div>

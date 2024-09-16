@@ -123,7 +123,7 @@ st.markdown(
 
 .slogan {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     color: #fff;
     text-align: center;

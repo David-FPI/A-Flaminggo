@@ -1,13 +1,13 @@
 import streamlit as st
 
-# Title of the app
+# Set the title for the app
 st.title("🎈 A-Flamingo Club")
 
-# Custom CSS to set a galaxy-themed background with pink highlights
+# Custom CSS to set the galaxy-themed background
 st.markdown(
     """
     <style>
-    /* Set the background image for the entire page */
+    /* Apply the galaxy image as the background to the whole body */
     body {
         background-image: url('https://images.unsplash.com/photo-1568223288053-3cf3f6e915f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80');
         background-size: cover;
@@ -16,12 +16,20 @@ st.markdown(
         color: white;
     }
 
-    /* Ensure that the main content area also uses the same background */
+    /* Ensure that all Streamlit content has proper visibility with some transparency */
     .stApp {
-        background-color: rgba(0, 0, 0, 0.5); /* Add slight transparency for contrast */
+        background-color: rgba(0, 0, 0, 0.6); /* Transparent dark overlay for content visibility */
+        padding: 20px;
+        border-radius: 15px;
     }
 
-    /* Styling for the container holding image and description */
+    /* Make the text stand out with a shadow effect */
+    h1 {
+        color: #ff69b4; /* Bright pink to match galaxy theme */
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    /* Style for the container holding image and description */
     .container {
         display: flex;
         align-items: center;
@@ -31,7 +39,7 @@ st.markdown(
         border-radius: 15px;
     }
 
-    /* Styling for the circular image */
+    /* Circular image styling */
     .icon {
         border-radius: 50%;
         width: 150px;
@@ -40,16 +48,10 @@ st.markdown(
         border: 3px solid white;
     }
 
-    /* Styling for the text description */
+    /* Styling the text next to the image */
     .description {
         font-size: 22px;
         font-weight: bold;
-    }
-
-    /* Style the title to stand out */
-    h1 {
-        color: #ff69b4; /* Bright pink to match galaxy theme */
-        text-shadow: 2px 2px 4px #000000;
     }
     </style>
     """,

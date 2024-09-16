@@ -65,7 +65,7 @@ st.markdown(
     /* Styling cho container chứa icon và mô tả */
     .icon-container {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
         padding: 20px;
     }
@@ -77,13 +77,29 @@ st.markdown(
         border-radius: 50%;
         margin-right: 20px;
         border: 3px solid white;
+        flex-shrink: 0;
     }
     
     /* Styling cho phần mô tả */
     .description {
         color: white;
-        font-size: 20px;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* Styling cho tiêu đề */
+    .title {
+        font-size: 36px;
         font-weight: bold;
+        margin-bottom: 10px;
+        color: #ff69b4;
+    }
+    
+    /* Styling cho caption */
+    .caption {
+        font-size: 14px;
+        line-height: 1.5;
     }
     
     /* Styling cho link */

@@ -1,52 +1,62 @@
 import streamlit as st
 
-# Hình ảnh đầu tiên (giữ nguyên nhưng không có margin)
-st.image("https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6")
+# Hình ảnh đầu tiên với kích thước lớn hơn
+st.image(
+    "https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6",
+    width=800  # Kích thước lớn hơn cho hình ảnh đầu tiên
+)
 
-# Custom CSS to set the galaxy-themed background
+# Custom CSS để thiết lập nền galaxy và tràn viền
 st.markdown(
     """
     <style>
-    /* Apply the galaxy image as the background to the whole body */
+    /* Đặt hình nền galaxy cho toàn bộ body */
     body {
         background-image: url('https://img.freepik.com/premium-photo/pastel-clouds-background-pastel-cloud-background-dreamy-clouds-background-pastel-sky-background-ai-generative_703884-13035.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        color: white;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 
-    /* Ensure that all Streamlit content has proper visibility with some transparency */
+    /* Xóa bỏ mọi khoảng trống giữa các phần tử */
     .stApp {
-        background-color: rgba(0, 0, 0, 0.6); /* Transparent dark overlay for content visibility */
-        padding: 20px;
-        border-radius: 15px;
+        padding: 0;
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.7); /* Nền mờ tối cho phần nội dung */
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
     }
 
-    /* Remove any margin or padding between images */
+    /* Đảm bảo hình ảnh không có khoảng trống */
     img {
         margin: 0;
         padding: 0;
+        width: 100%; /* Đặt hình ảnh tràn viền */
     }
 
-    /* Make the text stand out with a shadow effect */
+    /* Thiết lập cho các tiêu đề */
     h1 {
-        color: #ff69b4; /* Bright pink to match galaxy theme */
+        color: #ff69b4; /* Màu hồng sáng phù hợp với nền galaxy */
         text-shadow: 2px 2px 4px #000000;
     }
 
-    /* Style for the container holding image and description */
+    /* Container chứa hình và mô tả */
     .container {
         display: flex;
         align-items: center;
-        margin: 0px; /* Remove any space between elements */
+        margin: 0px; /* Xóa bỏ khoảng trống giữa các phần tử */
         padding: 0px;
-        background-color: rgba(255, 255, 255, 0.1); /* Slight white transparent background for container */
-        padding: 20px;
-        border-radius: 15px;
+        background-color: rgba(255, 255, 255, 0.1); /* Nền mờ trắng cho phần container */
+        width: 100%;
     }
 
-    /* Circular image styling */
+    /* Hình ảnh tròn */
     .icon {
         border-radius: 50%;
         width: 150px;
@@ -55,17 +65,18 @@ st.markdown(
         border: 3px solid white;
     }
 
-    /* Styling the text next to the image */
+    /* Văn bản mô tả */
     .description {
         font-size: 22px;
         font-weight: bold;
+        color: white;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-# Display the image and description in a container
+# Hiển thị hình ảnh tròn và mô tả
 st.markdown(
     """
     <div class="container">
@@ -79,7 +90,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Call to action link
+# Liên kết hành động
 st.write(
     "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
 )

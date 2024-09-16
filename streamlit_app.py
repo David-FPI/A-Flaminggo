@@ -1,13 +1,13 @@
 import streamlit as st
 
 # Title of the app
-st.title(" A-Flamingo Club")
+st.title("🎈 A-Flamingo Club")
 
-# Custom CSS to set the galaxy background with pink highlights
+# Custom CSS to set a galaxy-themed background with pink highlights
 st.markdown(
     """
     <style>
-    /* Set the background image to a galaxy with pink tones */
+    /* Set the background image for the entire page */
     body {
         background-image: url('https://images.unsplash.com/photo-1568223288053-3cf3f6e915f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80');
         background-size: cover;
@@ -15,13 +15,23 @@ st.markdown(
         background-attachment: fixed;
         color: white;
     }
-    /* Add custom styling to the content box */
+
+    /* Ensure that the main content area also uses the same background */
+    .stApp {
+        background-color: rgba(0, 0, 0, 0.5); /* Add slight transparency for contrast */
+    }
+
+    /* Styling for the container holding image and description */
     .container {
         display: flex;
         align-items: center;
         margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.1); /* Slight white transparent background for container */
+        padding: 20px;
+        border-radius: 15px;
     }
-    /* Make the image circular and add a white border */
+
+    /* Styling for the circular image */
     .icon {
         border-radius: 50%;
         width: 150px;
@@ -29,10 +39,17 @@ st.markdown(
         margin-right: 20px;
         border: 3px solid white;
     }
-    /* Set text font and size for the description */
+
+    /* Styling for the text description */
     .description {
         font-size: 22px;
         font-weight: bold;
+    }
+
+    /* Style the title to stand out */
+    h1 {
+        color: #ff69b4; /* Bright pink to match galaxy theme */
+        text-shadow: 2px 2px 4px #000000;
     }
     </style>
     """,

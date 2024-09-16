@@ -130,7 +130,7 @@ st.markdown(
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1s ease-in-out;
     letter-spacing: 2px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
     
     </style>

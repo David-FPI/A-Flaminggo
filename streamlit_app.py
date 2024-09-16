@@ -9,7 +9,7 @@ st.markdown(
     <style>
     /* Apply the galaxy image as the background to the whole body */
     body {
-        background-image: url('https://thepositiveedge.net/wp-content/uploads/2017/10/Nebula-flipped-e1524510729796.jpg');
+        background-image: url('https://img.freepik.com/premium-photo/pastel-clouds-background-pastel-cloud-background-dreamy-clouds-background-pastel-sky-background-ai-generative_703884-13035.jpg');
         background-size: cover;
         background-position: center;
         background-attachment: fixed;

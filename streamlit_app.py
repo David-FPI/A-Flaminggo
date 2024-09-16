@@ -10,7 +10,7 @@ hide_st_style = """
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# Custom CSS để thiết lập giao diện full màn hình
+# Custom CSS để thiết lập giao diện full màn hình không có khoảng trống
 st.markdown(
     """
     <style>
@@ -22,14 +22,16 @@ st.markdown(
     }
     
     /* Thiết lập body và .stApp để full màn hình */
-    body, .stApp {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
+    body, .stApp, .element-container, .css-1d391kg, .css-1v3fvcr, .css-dm3055, .css-1q1n0ol {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow-x: hidden !important;
     }
     
-    /* Ẩn thanh cuộn */
-    ::-webkit-scrollbar {
+    /* Ẩn thanh cuộn ngang */
+    body::-webkit-scrollbar {
         display: none;
     }
     
@@ -47,17 +49,16 @@ st.markdown(
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 100%;
+        justify-content: flex-start;
+        min-height: 100vh;
         width: 100%;
-        padding: 20px;
         background-color: rgba(0, 0, 0, 0.6);
     }
     
     /* Styling cho hình ảnh */
     .full-width-image {
         width: 100%;
-        max-height: 50vh;
+        height: auto;
         object-fit: cover;
     }
     
@@ -66,7 +67,7 @@ st.markdown(
         display: flex;
         align-items: center;
         width: 100%;
-        padding: 20px 0;
+        padding: 20px;
     }
     
     /* Circular image styling */
@@ -81,7 +82,7 @@ st.markdown(
     /* Styling cho phần mô tả */
     .description {
         color: white;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: bold;
     }
     
@@ -90,6 +91,8 @@ st.markdown(
         color: #ff69b4;
         font-size: 18px;
         margin-top: 20px;
+        padding: 0 20px;
+        text-align: center;
     }
     </style>
     """,

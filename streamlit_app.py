@@ -129,8 +129,7 @@ st.markdown(
                 </div>
             </div>
         </div>
-        <div class="link-text">
-            Let's start building! For help and inspiration, head over to <a href="https://docs.streamlit.io/" target="_blank">docs.streamlit.io</a>.
+
         </div>
     </div>
     """,

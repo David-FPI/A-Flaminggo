@@ -8,9 +8,9 @@ selected_topic = st.sidebar.selectbox("Chọn chủ đề", ["Giới thiệu", "
 
 # Định nghĩa nội dung các chủ đề
 topics = {
-    "Giới thiệu": "Đây là phần giới thiệu về câu lạc bộ A-Flamingo.",
-    "Hoạt động": "Ở đây chúng ta sẽ liệt kê các hoạt động của câu lạc bộ.",
-    "Thành viên": "Danh sách các thành viên trong câu lạc bộ."
+    "Giới thiệu",
+    "Hành trình phát triển",
+    "Tin tức mới nhất",
 }
 
 # Hiển thị nội dung

@@ -77,7 +77,7 @@ hide_st_style = """
 """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# Custom CSS for fullscreen design and background
+# CSS tùy chỉnh cho thiết kế fullscreen và background
 st.markdown("""
     <style>
     * {
@@ -86,99 +86,181 @@ st.markdown("""
         box-sizing: border-box;
     }
 
-    /* Fullscreen settings */
+    /* Cài đặt fullscreen */
     body, .stApp, .element-container, .css-1d391kg, .css-1v3fvcr, .css-dm3055, .css-1q1n0ol {
         width: 100vw !important;
         max-width: 100vw !important;
         padding: 0 !important;
         margin: 0 !important;
-        overflow-x: hidden !important;
-    }
-
-    /* Background setup */
-    .stApp {
-        background-image: url('https://img.freepik.com/premium-photo/pastel-clouds-background-pastel-cloud-background-dreamy-clouds-background-pastel-sky-background-ai-generative_703884-13035.jpg');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        flex-direction: column;
     }
 
     .main-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start;
-        min-height: 100vh;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-
-    .main-container1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        min-height: 100vh;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.6);
+        justify-content: center;
+        height: 100vh;
+        background: url('https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        color: white;
     }
 
     .full-width-image {
         width: 100%;
         height: auto;
-        object-fit: cover;
     }
 
     .icon-container {
         display: flex;
-        align-items: flex-start;
-        width: 100%;
-        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
     }
 
     .icon {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
-        margin-right: 20px;
-        border: 3px solid white;
-        flex-shrink: 0;
+        margin: 0 10px;
     }
 
     .description {
-        color: white;
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
     }
 
     .title {
-        font-size: 36px;
+        font-size: 24px;
         font-weight: bold;
-        margin-bottom: 10px;
-        color: #ff69b4;
-        display: flex;
-        align-items: center;
     }
 
     .caption {
-        font-size: 14px;
-        line-height: 1.5;
+        font-size: 18px;
     }
 
     .slogan {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: fadeIn 1s ease-in-out;
-        letter-spacing: 2px;
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .main-container1 {
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 10px;
     }
     </style>
 """, unsafe_allow_html=True)
+
+# # Custom CSS for fullscreen design and background
+# st.markdown("""
+#     <style>
+#     * {
+#         margin: 0;
+#         padding: 0;
+#         box-sizing: border-box;
+#     }
+
+#     /* Fullscreen settings */
+#     body, .stApp, .element-container, .css-1d391kg, .css-1v3fvcr, .css-dm3055, .css-1q1n0ol {
+#         width: 100vw !important;
+#         max-width: 100vw !important;
+#         padding: 0 !important;
+#         margin: 0 !important;
+#         overflow-x: hidden !important;
+#     }
+
+#     /* Background setup */
+#     .stApp {
+#         background-image: url('https://img.freepik.com/premium-photo/pastel-clouds-background-pastel-cloud-background-dreamy-clouds-background-pastel-sky-background-ai-generative_703884-13035.jpg');
+#         background-size: cover;
+#         background-position: center;
+#         display: flex;
+#         flex-direction: column;
+#     }
+
+#     .main-container {
+#         display: flex;
+#         flex-direction: column;
+#         align-items: center;
+#         justify-content: flex-start;
+#         min-height: 100vh;
+#         width: 100%;
+#         background-color: rgba(0, 0, 0, 0.6);
+#     }
+
+#     .main-container1 {
+#         display: flex;
+#         flex-direction: column;
+#         align-items: center;
+#         justify-content: flex-start;
+#         min-height: 100vh;
+#         width: 100%;
+#         background-color: rgba(0, 0, 0, 0.6);
+#     }
+
+#     .full-width-image {
+#         width: 100%;
+#         height: auto;
+#         object-fit: cover;
+#     }
+
+#     .icon-container {
+#         display: flex;
+#         align-items: flex-start;
+#         width: 100%;
+#         padding: 20px;
+#     }
+
+#     .icon {
+#         width: 150px;
+#         height: 150px;
+#         border-radius: 50%;
+#         margin-right: 20px;
+#         border: 3px solid white;
+#         flex-shrink: 0;
+#     }
+
+#     .description {
+#         color: white;
+#         font-size: 16px;
+#         display: flex;
+#         flex-direction: column;
+#     }
+
+#     .title {
+#         font-size: 36px;
+#         font-weight: bold;
+#         margin-bottom: 10px;
+#         color: #ff69b4;
+#         display: flex;
+#         align-items: center;
+#     }
+
+#     .caption {
+#         font-size: 14px;
+#         line-height: 1.5;
+#     }
+
+#     .slogan {
+#         font-family: 'Montserrat', sans-serif;
+#         font-size: 12px;
+#         font-weight: bold;
+#         color: #fff;
+#         text-align: center;
+#         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+#         animation: fadeIn 1s ease-in-out;
+#         letter-spacing: 2px;
+#     }
+#     </style>
+# """, unsafe_allow_html=True)
 
 
 # # HTML structure cho layout full màn hình với tiêu đề nổi bật và caption, bao gồm icon con hạc

@@ -30,6 +30,7 @@ topics = {
         </div>
     </div>
     """,
+        unsafe_allow_html=True
     "Quá trình phát triển": """
         <h2>Quá trình phát triển của A-Flamingo</h2>
         <p>**Năm 2022:** Câu lạc bộ được thành lập và tổ chức các hoạt động nhỏ để giới thiệu đến các thành viên.</p>
@@ -44,7 +45,10 @@ topics = {
             <li>Tham gia lễ hội âm nhạc trường: 15/05/2024</li>
         </ul>
     """
+
 }
+
+
 # Hiển thị nội dung
 st.markdown(topics[selected_topic], unsafe_allow_html=True)
 

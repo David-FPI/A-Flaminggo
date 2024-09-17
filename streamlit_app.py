@@ -178,3 +178,28 @@ st.markdown("""
 #     unsafe_allow_html=True
 # )
 
+st.markdown(
+    """
+      <div class="main-container">
+        <img src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6" class="full-width-image">
+        <div class="icon-container">
+            <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/447678075_767488495531324_3390405170555493979_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=xuaEcEZMd6sQ7kNvgHLiqBW&_nc_ht=scontent.fsgn5-8.fna&_nc_gid=AWVa4ylzPoVZW2g61tLsXxo&oh=00_AYCzt7Ed6xiewhnBUFT4nEFDwYj9gjdXoQBX_fyHNLYGEw&oe=66EDA697" class="icon">
+            <div class="description">
+                <h2>Introduction</h2>
+                <p>🥳 Chào mừng bạn đến với CLB AFlamingo – ngôi nhà chung của sự sáng tạo và đam mê! 🦩🦩🦩🦩🦩</p>
+                <p>🌻1. Mục tiêu và sứ mệnh:<br>
+                CLB AFlamingo được thành lập với mục đích tạo nên một sân chơi sôi động cho các bạn sinh viên. Không cần có năng khiếu đặc biệt, chỉ cần bạn yêu thích trải nghiệm, khám phá và kết nối, AFlamingo luôn chào đón bạn. Đây không chỉ là nơi để bạn thể hiện bản thân mà còn là cơ hội để học hỏi, phát triển kỹ năng và xây dựng những mối quan hệ win-win.</p>
+                <p>🌻2. Lịch sử hình thành và phát triển:<br>
+                Được thành lập vào ngày 07.03.2019, CLB AFlamingo đã trải qua nhiều giai đoạn phát triển và ngày càng khẳng định vị thế của mình trong cộng đồng sinh viên. Với sự nhiệt huyết và sáng tạo, chúng tôi đã tổ chức nhiều hoạt động và sự kiện đáng nhớ, góp phần tạo nên một môi trường năng động và thân thiện.</p>
+                <p>🌻3. Các hoạt động chính:<br>
+                CLB AFlamingo luôn tự hào với nhiều hoạt động phong phú và đa dạng:<br>
+                🔥 BSK: BAN SỰ KIỆN là người kiến tạo những khoảnh khắc đáng nhớ và trải nghiệm tuyệt vời cho các TV và SV, biến những ý tưởng sáng tạo thành hiện thực, mang đến những khoảnh khắc đáng nhớ. Không yêu cầu bạn có kỹ năng từ trước, chỉ cần sự nhiệt huyết, sẵn sàng gia nhập hội con nhà AFla, mọi thứ sẽ có AFla lo.<br>
+                🔥 BNK: BAN NĂNG KHIẾU là nơi những tinh thần âm nhạc hội tụ, là sân chơi hoàn hảo cho những ai đam mê hát, đàn, diễn xuất và các loại hình nghệ thuật khác có thể thỏa sức đam mê, tỏa sáng tài năng trên sân khấu, hay xuất hiện trong những MV Cover chất như nước cất từ CLB. Quan trọng cũng không cần bạn phải quá xuất sắc, chỉ bạn thích là được. Một tinh thần vui vẻ, hòa đồng và không ngại thể hiện bản thân là điều mà Afla quan tâm.<br>
+                🔥 BTT: BAN TRUYỀN THÔNG người kết nối của CLB là ngọn lửa luôn cháy rực để truyền đạt kết nối giữa CLB và các bạn SV, mang những thông điệp, giá trị và tinh thần của CLB đến gần hơn với mọi người. Như 2 ban trên cũng không cần bạn quá xuất sắc, Afla chỉ cần 1 chữ “muốn” từ bạn.<br>
+                🔥 Ngoài ra, AFla còn tổ chức các workshop phát triển kỹ năng, talkshow giao lưu, dự án thiện nguyện ý nghĩa.</p>
+            </div>
+        </div>
+    </div>
+    """,
+    unsafe_allow_html=True
+)

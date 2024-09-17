@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 
-# ... (Giữ nguyên phần code tùy chỉnh giao diện của bạn)
-
 # Tạo sidebar và cho phép người dùng chọn chủ đề
 selected_topic = st.sidebar.selectbox("Chọn chủ đề", ["Giới thiệu", "Quá trình phát triển", "Cập nhật hoạt động mới"])
 
@@ -45,12 +43,10 @@ topics = {
         </ul>
     """
 }
-# Hiển thị nội dung
-for topic, content in topics.items():
-    st.markdown(content, unsafe_allow_html=True)
+
 
 # # Hiển thị nội dung
-# st.markdown(topics[selected_topic], unsafe_allow_html=True)
+ st.markdown(topics[selected_topic], unsafe_allow_html=True)
 
 # Hiển thị nội dung
 st.write(topics[selected_topic])

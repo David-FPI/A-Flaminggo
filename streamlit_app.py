@@ -38,6 +38,9 @@ topics = {
     """
 }
 # Hiển thị nội dung
+st.markdown(topics[selected_topic], unsafe_allow_html=True)
+
+# Hiển thị nội dung
 st.write(topics[selected_topic])
 # Ẩn main menu và footer của Streamlit
 hide_st_style = """

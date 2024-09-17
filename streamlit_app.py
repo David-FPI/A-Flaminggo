@@ -9,7 +9,8 @@ selected_topic = st.sidebar.selectbox("Chọn chủ đề", ["Giới thiệu", "
 # Định nghĩa nội dung các chủ đề
 
 topics = {
-   "Giới thiệu":"""
+   "Giới thiệu":
+   """
     <div class="main-container">
         <img src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6" class="full-width-image">
         <div class="icon-container">
@@ -30,13 +31,15 @@ topics = {
         </div>
     </div>
     """,
-    "Quá trình phát triển":"""
+    "Quá trình phát triển":
+   """
         <h2>Quá trình phát triển của A-Flamingo</h2>
         <p>**Năm 2022:** Câu lạc bộ được thành lập và tổ chức các hoạt động nhỏ để giới thiệu đến các thành viên.</p>
         <p>**Năm 2023:** A-Flamingo tổ chức thành công sự kiện âm nhạc lớn đầu tiên, thu hút sự quan tâm của đông đảo sinh viên.</p>
         <p>**Năm 2024:** Chúng tôi đang lên kế hoạch cho nhiều hoạt động mới như workshop sáng tác nhạc, buổi biểu diễn kết hợp với các câu lạc bộ khác...</p>
     """,
-    "Cập nhật hoạt động mới":"""
+    "Cập nhật hoạt động mới":
+   """
         <h2>Hoạt động sắp tới</h2>
         <ul>
             <li>Workshop sáng tác nhạc: 15/04/2024</li>

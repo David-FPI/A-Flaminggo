@@ -1,5 +1,5 @@
 import streamlit as st
-
+import pandas as pd
 
 # ... (Giữ nguyên phần code tùy chỉnh giao diện của bạn)
 
@@ -48,7 +48,14 @@ topics = {
     """
     unsafe_allow_html=True
 }
+# Hiển thị nội dung
+for topic, content in topics.items():
+    st.markdown(content, unsafe_allow_html=True)
 
+# Ví dụ về việc hiển thị một DataFrame
+if selected_topic == "Quá trình phát triển":
+    df = pd.DataFrame({'Năm': [2022, 2023], 'Sự kiện': ['Thành lập câu lạc bộ', 'Tổ chức sự kiện đầu tiên']})
+    st.table(df)
 
 # Hiển thị nội dung
 st.markdown(topics[selected_topic], unsafe_allow_html=True)

@@ -28,7 +28,7 @@ topics = {
             </div>
         </div>
     </div>
-          <div class="main-container">
+          <div class="main-container1">
             <div class="description">
                 <div class="title">
                     <img src="https://cdn-icons-png.flaticon.com/128/3807/3807146.png" alt="Icon flamingo" width="40" height="40" style="margin-right: 10px;">
@@ -105,6 +105,16 @@ st.markdown("""
     }
 
     .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: 100vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .main-container1 {
         display: flex;
         flex-direction: column;
         align-items: center;

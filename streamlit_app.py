@@ -180,6 +180,7 @@ st.markdown("""
 
 st.markdown(
     """
+      <div class="main-container">
             <div class="description">
                 <h2>Introduction</h2>
                 <p>🥳 Chào mừng bạn đến với CLB AFlamingo – ngôi nhà chung của sự sáng tạo và đam mê! 🦩🦩🦩🦩🦩</p>
@@ -195,7 +196,6 @@ st.markdown(
                 🔥 Ngoài ra, AFla còn tổ chức các workshop phát triển kỹ năng, talkshow giao lưu, dự án thiện nguyện ý nghĩa.</p>
             </div>
         </div>
-    </div>
     """,
     unsafe_allow_html=True
 )

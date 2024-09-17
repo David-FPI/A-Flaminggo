@@ -28,7 +28,7 @@ topics = {
         <p>**Năm 2023:** A-Flamingo tổ chức thành công sự kiện âm nhạc lớn đầu tiên, thu hút sự quan tâm của đông đảo sinh viên.</p>
         <p>**Năm 2024:** Chúng tôi đang lên kế hoạch cho nhiều hoạt động mới như workshop sáng tác nhạc, buổi biểu diễn kết hợp với các câu lạc bộ khác...</p>
     """,
-    "Hoạt động sắp tới": """
+    "Cập nhật hoạt động mới": """
         <h2>Hoạt động sắp tới</h2>
         <ul>
             <li>Workshop sáng tác nhạc: 15/04/2024</li>

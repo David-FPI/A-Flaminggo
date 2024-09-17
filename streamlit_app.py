@@ -45,10 +45,12 @@ topics = {
         </ul>
     """
 }
-
-
 # Hiển thị nội dung
-st.markdown(topics[selected_topic], unsafe_allow_html=True)
+for topic, content in topics.items():
+    st.markdown(content, unsafe_allow_html=True)
+
+# # Hiển thị nội dung
+# st.markdown(topics[selected_topic], unsafe_allow_html=True)
 
 # Hiển thị nội dung
 st.write(topics[selected_topic])

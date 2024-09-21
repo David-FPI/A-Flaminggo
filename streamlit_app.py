@@ -31,7 +31,7 @@ topics = {
           <div class="main-container1">
             <div class="description">
                 <div class="title">
-                    <img src="blob:https://lordicon.com/8aa0ecf4-6e72-4133-beb1-bae495ea8f1c" alt="Icon flamingo" width="40" height="40" style="margin-right: 10px;">
+                    <img src="https://cdn-icons-png.flaticon.com/128/3807/3807146.png" alt="Icon flamingo" width="40" height="40" style="margin-right: 10px;">
                     Introduction
                 </div>
                   <p>🥳 Chào mừng bạn đến với CLB AFlamingo – ngôi nhà chung của sự sáng tạo và đam mê! 🦩🦩🦩🦩🦩</p>

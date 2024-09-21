@@ -36,6 +36,16 @@ topics = {
             <p>🥳 Chào mừng bạn đến với CLB AFlamingo – ngôi nhà chung của sự sáng tạo và đam mê! 🦩🦩🦩🦩🦩</p>
             <p>🌻1. Mục tiêu và sứ mệnh:<br>
             CLB AFlamingo được thành lập với mục đích tạo nên một sân chơi sôi động cho các bạn sinh viên. Không cần có năng khiếu đặc biệt, chỉ cần bạn yêu thích trải nghiệm, khám phá và kết nối, AFlamingo luôn chào đón bạn. Đây không chỉ là nơi để bạn thể hiện bản thân mà còn là cơ hội để học hỏi, phát triển kỹ năng và xây dựng những mối quan hệ win-win.</p>
+            <!-- Image Carousel -->
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/453653029_803232038623636_4474963559018962562_n.jpg?stp=dst-jpg_s600x600&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=p9kPyImlJbUQ7kNvgEo-ot5&_nc_ht=scontent.fhan4-5.fna&_nc_gid=A4wY0EfS4tGbFW-Jr4i52GT&oh=00_AYBQ6HeTv4soZec6waf0QJ95oGTKZcb5c9kq7klmy8hCow&oe=66F48296" alt="Image 1">
+                    <img src="https://scontent.fhan3-3.fna.fbcdn.net/v/t39.30808-6/453744969_803232058623634_7719440443003092701_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=wnIRGK9P21sQ7kNvgFwujLs&_nc_ht=scontent.fhan3-3.fna&oh=00_AYA4pM3WvSCZntGrah8g_ZiHuzri1SUSD5J8F9n7ug_PjA&oe=66F472A7" alt="Image 2">
+                    <img src="https://scontent.fhan4-6.fna.fbcdn.net/v/t39.30808-6/453979423_803232118623628_2810890337323588299_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=Zh8kjFvL5aUQ7kNvgGH7C5g&_nc_ht=scontent.fhan4-6.fna&oh=00_AYC6uRnBddEt41y9122ewpomOg9ukA7rdLuSO_0nzjbNPw&oe=66F47722" alt="Image 3">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
             <p>🌻2. Lịch sử hình thành và phát triển:<br>
             Được thành lập vào ngày 07.03.2019, CLB AFlamingo đã trải qua nhiều giai đoạn phát triển và ngày càng khẳng định vị thế của mình trong cộng đồng sinh viên. Với sự nhiệt huyết và sáng tạo, chúng tôi đã tổ chức nhiều hoạt động và sự kiện đáng nhớ, góp phần tạo nên một môi trường năng động và thân thiện.</p>
             <p>🌻3. Các hoạt động chính:<br>

@@ -36,6 +36,7 @@ topics = {
             <p>🥳 Chào mừng bạn đến với CLB AFlamingo – ngôi nhà chung của sự sáng tạo và đam mê! 🦩🦩🦩🦩🦩</p>
             <p>🌻1. Mục tiêu và sứ mệnh:<br>
             CLB AFlamingo được thành lập với mục đích tạo nên một sân chơi sôi động cho các bạn sinh viên. Không cần có năng khiếu đặc biệt, chỉ cần bạn yêu thích trải nghiệm, khám phá và kết nối, AFlamingo luôn chào đón bạn. Đây không chỉ là nơi để bạn thể hiện bản thân mà còn là cơ hội để học hỏi, phát triển kỹ năng và xây dựng những mối quan hệ win-win.</p>
+            
             <!-- Image Carousel -->
             <div class="carousel-container">
                 <div class="carousel">
@@ -46,6 +47,7 @@ topics = {
                 <button class="prev">&#10094;</button>
                 <button class="next">&#10095;</button>
             </div>
+            
             <p>🌻2. Lịch sử hình thành và phát triển:<br>
             Được thành lập vào ngày 07.03.2019, CLB AFlamingo đã trải qua nhiều giai đoạn phát triển và ngày càng khẳng định vị thế của mình trong cộng đồng sinh viên. Với sự nhiệt huyết và sáng tạo, chúng tôi đã tổ chức nhiều hoạt động và sự kiện đáng nhớ, góp phần tạo nên một môi trường năng động và thân thiện.</p>
             <p>🌻3. Các hoạt động chính:<br>
@@ -76,7 +78,7 @@ topics = {
 # Display the content for the selected topic
 st.markdown(topics[selected_topic], unsafe_allow_html=True)
 
-# Custom CSS for responsive design
+# Custom CSS for responsive design and image carousel
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
@@ -147,91 +149,3 @@ st.markdown("""
     }
 
     .title {
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #ff69b4;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .title-icon {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-    }
-
-    .caption {
-        font-size: 14px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-    }
-
-    .slogan {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff;
-        text-align: center;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        animation: fadeIn 1s ease-in-out;
-        letter-spacing: 2px;
-        margin-top: 20px;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-        .icon-container {
-            padding: 10px 0;
-        }
-
-        .icon {
-            width: 100px;
-            height: 100px;
-        }
-
-        .title {
-            font-size: 24px;
-        }
-
-        .caption {
-            font-size: 12px;
-        }
-
-        .slogan {
-            font-size: 14px;
-        }
-    }
-
-    @media (max-width: 480px) {
-        .main-container, .main-container1 {
-            padding: 10px;
-        }
-
-        .title {
-            font-size: 20px;
-        }
-
-        .title-icon {
-            width: 20px;
-            height: 20px;
-        }
-
-        .caption {
-            font-size: 10px;
-        }
-
-        .slogan {
-            font-size: 12px;
-        }
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-    </style>
-""", unsafe_allow_html=True)

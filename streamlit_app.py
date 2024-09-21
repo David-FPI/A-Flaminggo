@@ -66,7 +66,7 @@ topics = {
 # Display the content for the selected topic
 st.markdown(topics[selected_topic], unsafe_allow_html=True)
 
-# Custom CSS for responsive design and image carousel
+# Custom CSS for responsive design
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
@@ -137,3 +137,91 @@ st.markdown("""
     }
 
     .title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #ff69b4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .title-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .caption {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .slogan {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        animation: fadeIn 1s ease-in-out;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .icon-container {
+            padding: 10px 0;
+        }
+
+        .icon {
+            width: 100px;
+            height: 100px;
+        }
+
+        .title {
+            font-size: 24px;
+        }
+
+        .caption {
+            font-size: 12px;
+        }
+
+        .slogan {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .main-container, .main-container1 {
+            padding: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+        }
+
+        .title-icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .caption {
+            font-size: 10px;
+        }
+
+        .slogan {
+            font-size: 12px;
+        }
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    </style>
+""", unsafe_allow_html=True)

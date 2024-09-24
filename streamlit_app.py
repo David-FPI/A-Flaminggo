@@ -231,11 +231,11 @@ import time
 
 # Danh sách các ảnh hồng hạc trực tuyến
 images = [
-    "https://upload.wikimedia.org/wikipedia/commons/2/26/American_flamingo_-_Phoenicopterus_ruber.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/8/87/Flamingo_Laguna_Colorada_2006_02.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/8/89/Greater_flamingo_%28Phoenicopterus_roseus%29_RWD.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flamingos_RWD4.jpg",
-    "https://upload.wikimedia.org/wikipedia/commons/3/30/Greater_flamingo_Phoenicopterus_roseus.jpg"
+    "https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/460061948_832852265661613_8913271978209387416_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gfNVneYypqwQ7kNvgF74e-h&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AMROi6wX0JaFxqDkP6gHCYf&oh=00_AYBPBkddWBc_I9HOhW_y9Hj8ZXRhbhyDkqSK9X9oto3PNA&oe=66F820AA",
+    "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/459943077_832852345661605_8993942302002378369_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AvY194xsmoAQ7kNvgH4tO45&_nc_ht=scontent.fsgn5-10.fna&oh=00_AYAf-kFZOjo3mIbtB2fmD1BhYHby0ZHM6-YbExTzg3-67A&oe=66F81E98",
+    "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/460266368_832852305661609_5459532278893249240_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CL9O5Ul_-4UQ7kNvgEanIxv&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=A1i4o7mOIOcTMSUpHM5AKt5&oh=00_AYCIA14-omyhs2RI2Dfcb29MrS8LorJ97PXocHjq9YB0XQ&oe=66F837D5",
+    "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/459841758_832852742328232_3155881399837493594_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ruA1VExK9DYQ7kNvgGJjvv4&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AuVQivWsEFjXVFksIRY7mKV&oh=00_AYAHsEIeY-Zvd1oX_r4VR2zZqEXBUCMjKo4cqLfWA1SRiQ&oe=66F81377",
+    "https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/460061948_832852265661613_8913271978209387416_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gfNVneYypqwQ7kNvgF74e-h&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AMROi6wX0JaFxqDkP6gHCYf&oh=00_AYBPBkddWBc_I9HOhW_y9Hj8ZXRhbhyDkqSK9X9oto3PNA&oe=66F820AA"
 ]
 
 # Tiêu đề ứng dụng

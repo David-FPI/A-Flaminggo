@@ -228,13 +228,13 @@ st.markdown("""
 
 import streamlit as st
 
-# Danh sách các ảnh hồng hạc (đường dẫn tạm thời)
+# Danh sách các ảnh hồng hạc trực tuyến
 images = [
-    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
-    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
-    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
-    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
-    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png"   # Thay thế với các ảnh khác khi có
+    "https://upload.wikimedia.org/wikipedia/commons/2/26/American_flamingo_-_Phoenicopterus_ruber.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/87/Flamingo_Laguna_Colorada_2006_02.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/Greater_flamingo_%28Phoenicopterus_roseus%29_RWD.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flamingos_RWD4.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/3/30/Greater_flamingo_Phoenicopterus_roseus.jpg"
 ]
 
 # Tiêu đề ứng dụng
@@ -245,4 +245,5 @@ image_index = st.slider("Chọn bức ảnh:", 0, len(images) - 1)
 
 # Hiển thị ảnh tương ứng
 st.image(images[image_index], caption=f"Ảnh Hồng Hạc {image_index + 1}")
+
 

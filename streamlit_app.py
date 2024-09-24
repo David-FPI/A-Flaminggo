@@ -47,15 +47,15 @@ topics = {
         </div>
         <div class="slideshow-container">
     <div class="mySlides">
-        <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/460061948_832852265661613_8913271978209387416_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gfNVneYypqwQ7kNvgF74e-h&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AMROi6wX0JaFxqDkP6gHCYf&oh=00_AYBPBkddWBc_I9HOhW_y9Hj8ZXRhbhyDkqSK9X9oto3PNA&oe=66F820AA" alt="Flamingo 1" style="width:100%">
+        <img src="https://scontent.fsgn5-9.fna.fbcdn.net/v/t39.30808-6/453653029_803232038623636_4474963559018962562_n.jpg?stp=dst-jpg_s600x600&_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=OGQLg-LWyXIQ7kNvgGND_Ey&_nc_ht=scontent.fsgn5-9.fna&_nc_gid=AvxudM1wrpkHwK5brwK17d9&oh=00_AYB6awiK5PKO6hB_crwOfbIp6E_rXaUrqJXgXTsT67DsGg&oe=66F83ED6" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/459943077_832852345661605_8993942302002378369_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AvY194xsmoAQ7kNvgH4tO45&_nc_ht=scontent.fsgn5-10.fna&oh=00_AYAf-kFZOjo3mIbtB2fmD1BhYHby0ZHM6-YbExTzg3-67A&oe=66F81E98" style="width:100%">
+        <img src="https://scontent.fsgn5-8.fna.fbcdn.net/v/t39.30808-6/453979423_803232118623628_2810890337323588299_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=nfIawRWPHH0Q7kNvgHP7Xtn&_nc_ht=scontent.fsgn5-8.fna&_nc_gid=AR0k80kBCGj41d1obi3hbQ9&oh=00_AYDwT7h9S6zeBWptiblxXbPOKs2ghX5rlJvvxQ9YORuCXQ&oe=66F83362" style="width:100%">
     </div>
 
     <div class="mySlides">
-        <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/460266368_832852305661609_5459532278893249240_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CL9O5Ul_-4UQ7kNvgEanIxv&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=A1i4o7mOIOcTMSUpHM5AKt5&oh=00_AYCIA14-omyhs2RI2Dfcb29MrS8LorJ97PXocHjq9YB0XQ&oe=66F837D5" style="width:100%">
+        <https://scontent.fsgn5-15.fna.fbcdn.net/v/t39.30808-6/453744969_803232058623634_7719440443003092701_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=fAuuwgiZj_UQ7kNvgGB1htM&_nc_ht=scontent.fsgn5-15.fna&oh=00_AYDkdig6TVIQgovsBTC3NrpsDZ2ktxiFcTakiwA4Wclfjg&oe=66F82EE7" style="width:100%">
     </div>
 
     <!-- Nút mũi tên -->

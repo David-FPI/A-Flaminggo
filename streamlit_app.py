@@ -225,3 +225,24 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
+import streamlit as st
+
+# Danh sách các đường dẫn đến ảnh
+images = [
+    "path/to/image1.jpg",
+    "path/to/image2.jpg",
+    "path/to/image3.jpg",
+    "path/to/image4.jpg",
+    "path/to/image5.jpg",
+]
+
+# Tiêu đề của ứng dụng
+st.title("Xem Ảnh")
+
+# Slider để chọn bức ảnh
+image_index = st.slider("Chọn bức ảnh:", 0, len(images) - 1)
+
+# Hiển thị bức ảnh được chọn
+st.image(images[image_index], caption=f"Ảnh {image_index + 1}")
+

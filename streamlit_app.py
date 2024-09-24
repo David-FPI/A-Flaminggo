@@ -228,21 +228,21 @@ st.markdown("""
 
 import streamlit as st
 
-# Danh sách các đường dẫn đến ảnh
+# Danh sách các ảnh hồng hạc (đường dẫn tạm thời)
 images = [
-    "path/to/image1.jpg",
-    "path/to/image2.jpg",
-    "path/to/image3.jpg",
-    "path/to/image4.jpg",
-    "path/to/image5.jpg",
+    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
+    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
+    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
+    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png",  # Thay thế với các ảnh khác khi có
+    "/mnt/data/A_beautiful_flamingo_standing_gracefully_in_shallo.png"   # Thay thế với các ảnh khác khi có
 ]
 
-# Tiêu đề của ứng dụng
-st.title("Xem Ảnh")
+# Tiêu đề ứng dụng
+st.title("Xem Ảnh Hồng Hạc")
 
-# Slider để chọn bức ảnh
+# Slider để chọn ảnh
 image_index = st.slider("Chọn bức ảnh:", 0, len(images) - 1)
 
-# Hiển thị bức ảnh được chọn
-st.image(images[image_index], caption=f"Ảnh {image_index + 1}")
+# Hiển thị ảnh tương ứng
+st.image(images[image_index], caption=f"Ảnh Hồng Hạc {image_index + 1}")
 

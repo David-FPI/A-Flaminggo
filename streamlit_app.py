@@ -227,23 +227,45 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 import streamlit as st
+import time
 
 # Danh sách các ảnh hồng hạc trực tuyến
 images = [
-    "https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/460061948_832852265661613_8913271978209387416_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gfNVneYypqwQ7kNvgF74e-h&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AMROi6wX0JaFxqDkP6gHCYf&oh=00_AYBPBkddWBc_I9HOhW_y9Hj8ZXRhbhyDkqSK9X9oto3PNA&oe=66F820AA",
-    "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/459943077_832852345661605_8993942302002378369_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AvY194xsmoAQ7kNvgH4tO45&_nc_ht=scontent.fsgn5-10.fna&oh=00_AYAf-kFZOjo3mIbtB2fmD1BhYHby0ZHM6-YbExTzg3-67A&oe=66F81E98",
-    "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/460266368_832852305661609_5459532278893249240_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CL9O5Ul_-4UQ7kNvgEanIxv&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=A1i4o7mOIOcTMSUpHM5AKt5&oh=00_AYCIA14-omyhs2RI2Dfcb29MrS8LorJ97PXocHjq9YB0XQ&oe=66F837D5",
-    "https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/459841758_832852742328232_3155881399837493594_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ruA1VExK9DYQ7kNvgGJjvv4&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=AuVQivWsEFjXVFksIRY7mKV&oh=00_AYAHsEIeY-Zvd1oX_r4VR2zZqEXBUCMjKo4cqLfWA1SRiQ&oe=66F81377",
-    "https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/460061948_832852265661613_8913271978209387416_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gfNVneYypqwQ7kNvgF74e-h&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AMROi6wX0JaFxqDkP6gHCYf&oh=00_AYBPBkddWBc_I9HOhW_y9Hj8ZXRhbhyDkqSK9X9oto3PNA&oe=66F820AA"
+    "https://upload.wikimedia.org/wikipedia/commons/2/26/American_flamingo_-_Phoenicopterus_ruber.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/87/Flamingo_Laguna_Colorada_2006_02.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/8/89/Greater_flamingo_%28Phoenicopterus_roseus%29_RWD.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/a/ae/Flamingos_RWD4.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/3/30/Greater_flamingo_Phoenicopterus_roseus.jpg"
 ]
 
 # Tiêu đề ứng dụng
 st.title("Xem Ảnh Hồng Hạc")
 
-# Slider để chọn ảnh
-image_index = st.slider("Chọn bức ảnh:", 0, len(images) - 1)
+# Sử dụng session state để lưu chỉ số ảnh hiện tại
+if 'image_index' not in st.session_state:
+    st.session_state.image_index = 0
+if 'last_update_time' not in st.session_state:
+    st.session_state.last_update_time = time.time()
+
+# Các nút để di chuyển giữa các ảnh
+col1, col2 = st.columns([1, 1])
+with col1:
+    if st.button("Ảnh Trước"):
+        st.session_state.image_index = (st.session_state.image_index - 1) % len(images)
+        st.session_state.last_update_time = time.time()  # Reset thời gian sau khi bấm nút
+with col2:
+    if st.button("Ảnh Sau"):
+        st.session_state.image_index = (st.session_state.image_index + 1) % len(images)
+        st.session_state.last_update_time = time.time()  # Reset thời gian sau khi bấm nút
 
 # Hiển thị ảnh tương ứng
-st.image(images[image_index], caption=f"Ảnh Hồng Hạc {image_index + 1}")
+st.image(images[st.session_state.image_index], caption=f"Ảnh Hồng Hạc {st.session_state.image_index + 1}")
+
+# Tự động chuyển ảnh sau mỗi 3 giây nếu không bấm nút
+if time.time() - st.session_state.last_update_time > 3:  # 3 giây sau khi không bấm nút
+    st.session_state.image_index = (st.session_state.image_index + 1) % len(images)
+    st.session_state.last_update_time = time.time()
+    st.experimental_rerun()
+
 
 

@@ -262,7 +262,7 @@ with col2:
 st.image(images[st.session_state.image_index], caption=f"Ảnh Hồng Hạc {st.session_state.image_index + 1}")
 
 # Tự động chuyển ảnh sau mỗi 3 giây nếu không bấm nút
-if time.time() - st.session_state.last_update_time > 3:  # 3 giây sau khi không bấm nút
+if time.time() - st.session_state.last_update_time > 2:  # 3 giây sau khi không bấm nút
     st.session_state.image_index = (st.session_state.image_index + 1) % len(images)
     st.session_state.last_update_time = time.time()
     st.experimental_rerun()

@@ -5,6 +5,7 @@ selected_topic = st.sidebar.selectbox("Chọn chủ đề", ["Giới thiệu", "
 
 # Define the content for each topic
 topics = {
+topics = {
     "Giới thiệu": """
     <div class="main-container">
         <img src="https://scontent.fsgn5-3.fna.fbcdn.net/v/t39.30808-6/456808805_818729667073873_2821881578807023624_n.jpg?stp=dst-jpg_s960x960&_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KFAuiixDV6AQ7kNvgE4kUXt&_nc_ht=scontent.fsgn5-3.fna&_nc_gid=AmAWqRZSaMovwE9p17qGNK_&oh=00_AYB-MMasH9o0I0XXGiZz2pKzLUiqJoSDJrHhFenJbtOXDQ&oe=66ED82B6" class="full-width-image">
@@ -46,6 +47,118 @@ topics = {
             🔥 Ngoài ra, AFla còn tổ chức các workshop phát triển kỹ năng, talkshow giao lưu, dự án thiện nguyện ý nghĩa.</p>
         </div>
     </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/456803149_818732327073607_4970075696503025209_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=KXtaTcf1npEAX8-3knF&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AWVa4y1mUkqMWT-1vXPPBDA&oh=00_AYR0qFchZT3BBGI4jVbQZ4TgUL3NGxHy1GOOtVx_vZnFg&oe=66ED83A3" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/456803881_818730157073824_1990864967045067246_n.jpg?stp=dst-jpg_s960x960&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=bOgv8DWBuA0AX9SxSRc&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AWVa4y1mUkqMWT-1vXPPBDA&oh=00_AYbZg9cQFM01_LCz_VPSME7NckMQGCE-o_vN9_j0w5wZA&oe=66ED85A8" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/456802921_818731807073659_4774012907947636121_n.jpg?stp=dst-jpg_s960x960&_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=W2UZG1CSLv0AX9F7W_g&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AWVa4y1mUkqMWT-1vXPPBDA&oh=00_AYV68BMSH6g7MAvvQHpAlhtI0FvA1HLDD2J56tVw4-TPg&oe=66ED86B7" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/456806124_818730497073790_5654556726415976711_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=8Ve7Sx8aYQ0AX8tt9F8&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AWVa4y1mUkqMWT-1vXPPBDA&oh=00_AYdoRnbzj1i8zLTOJYZPFE7fZwIUk8ukpH8hxMXYEtgMw&oe=66ED8A3E" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <style>
+        .slideshow-container {
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    </style>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
     """,
     "Quá trình phát triển": """
         <h2>Quá trình phát triển của A-Flamingo</h2>
@@ -64,7 +177,9 @@ topics = {
 }
 
 # Display the content for the selected topic
-st.markdown(topics[selected_topic], unsafe_allow_html=True)
+if selected_topic in topics:
+    st.markdown(topics[selected_topic], unsafe_allow_html=True)
+
 
 # Custom CSS for responsive design
 st.markdown("""
@@ -228,100 +343,7 @@ st.markdown("""
 
 
 
-import streamlit as st
 
-# Tạo ứng dụng Streamlit
-st.title("Trình Chiếu Ảnh Tự Động và Chuyển Đổi Thủ Công")
-
-# HTML/CSS/JS cho trình chiếu ảnh
-html_code = """
-<div class="slideshow-container">
-    <div class="mySlides">
-        <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/460061948_832852265661613_8913271978209387416_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_ohc=gfNVneYypqwQ7kNvgF74e-h&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=AMROi6wX0JaFxqDkP6gHCYf&oh=00_AYBPBkddWBc_I9HOhW_y9Hj8ZXRhbhyDkqSK9X9oto3PNA&oe=66F820AA" alt="Flamingo 1" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/459943077_832852345661605_8993942302002378369_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_ohc=AvY194xsmoAQ7kNvgH4tO45&_nc_ht=scontent.fsgn5-10.fna&oh=00_AYAf-kFZOjo3mIbtB2fmD1BhYHby0ZHM6-YbExTzg3-67A&oe=66F81E98" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <img src="https://scontent.fsgn5-10.fna.fbcdn.net/v/t39.30808-6/460266368_832852305661609_5459532278893249240_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=CL9O5Ul_-4UQ7kNvgEanIxv&_nc_ht=scontent.fsgn5-10.fna&_nc_gid=A1i4o7mOIOcTMSUpHM5AKt5&oh=00_AYCIA14-omyhs2RI2Dfcb29MrS8LorJ97PXocHjq9YB0XQ&oe=66F837D5" style="width:100%">
-    </div>
-
-    <!-- Nút mũi tên -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<script>
-    let slideIndex = 0;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-        let slides = document.getElementsByClassName("mySlides");
-        if (n >= slides.length) { slideIndex = 0 }
-        if (n < 0) { slideIndex = slides.length - 1 }
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slideIndex].style.display = "block";
-    }
-
-    // Tự động chuyển ảnh sau mỗi 3 giây
-    setInterval(function() {
-        plusSlides(1);
-    }, 3000);
-</script>
-
-<style>
-    .slideshow-container {
-        max-width: 500px;
-        position: relative;
-        margin: auto;
-    }
-
-    .mySlides {
-        display: none;
-    }
-
-    img {
-        width: 100%;
-        height: auto; /* Chiều cao tự động */
-        object-fit: contain; /* Đảm bảo ảnh không bị cắt */
-    }
-
-    .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -22px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-    }
-
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-</style>
-"""
-
-# Sử dụng Streamlit để hiển thị HTML/JS/CSS
-st.components.v1.html(html_code, height=600)
 
 
 

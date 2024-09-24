@@ -290,7 +290,8 @@ html_code = """
 
     img {
         width: 100%;
-        height: auto;
+        height: 100vh; /* Chiều cao chiếm 100% màn hình */
+        object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ không gian */
     }
 
     .prev, .next {
@@ -317,6 +318,7 @@ html_code = """
         background-color: rgba(0,0,0,0.8);
     }
 </style>
+
 """
 
 # Sử dụng Streamlit để hiển thị HTML/JS/CSS
